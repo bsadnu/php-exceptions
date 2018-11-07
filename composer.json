@@ -1,0 +1,24 @@
+{
+  "name": "bsadnu/php-exceptions",
+  "description": "The helpful custom PHP exceptions",
+  "keywords": ["PHP", "exception", "exceptions", "custom-exceptions"],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name":     "Stas Bannikov",
+      "email":    "sab.ukraine@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Bsadnu\\Exception\\": "src/"
+    }
+  }
+}

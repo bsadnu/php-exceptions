@@ -1,8 +1,8 @@
 <?php
 
-namespace Bsadnu\Exception;
+namespace Bsadnu\Exception\Base;
 
-use RangeException as StandardRangeException;
+use Bsadnu\Exception\Interfaces\BaseInterface;
 
 /**
  * Class RangeException.
@@ -12,7 +12,6 @@ use RangeException as StandardRangeException;
  *
  * @package Bsadnu\Exception
  */
-class RangeException extends StandardRangeException implements ExceptionInterface
+class RangeException extends \RangeException implements BaseInterface
 {
-    use UnitExceptionTrait;
 }

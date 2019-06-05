@@ -1,8 +1,8 @@
 <?php
 
-namespace Bsadnu\Exception;
+namespace Bsadnu\Exception\Base;
 
-use UnexpectedValueException as StandardUnexpectedValueException;
+use Bsadnu\Exception\Interfaces\BaseInterface;
 
 /**
  * Class UnexpectedValueException.
@@ -13,7 +13,6 @@ use UnexpectedValueException as StandardUnexpectedValueException;
  *
  * @package Bsadnu\Exception
  */
-class UnexpectedValueException extends StandardUnexpectedValueException implements ExceptionInterface
+class UnexpectedValueException extends \UnexpectedValueException implements BaseInterface
 {
-    use UnitExceptionTrait;
 }

@@ -1,8 +1,8 @@
 <?php
 
-namespace Bsadnu\Exception;
+namespace Bsadnu\Exception\Base;
 
-use OutOfRangeException as StandardOutOfRangeException;
+use Bsadnu\Exception\Interfaces\BaseInterface;
 
 /**
  * Class OutOfRangeException.
@@ -11,7 +11,6 @@ use OutOfRangeException as StandardOutOfRangeException;
  *
  * @package Bsadnu\Exception
  */
-class OutOfRangeException extends StandardOutOfRangeException implements ExceptionInterface
+class OutOfRangeException extends \OutOfRangeException implements BaseInterface
 {
-    use UnitExceptionTrait;
 }

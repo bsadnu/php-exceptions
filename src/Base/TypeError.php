@@ -1,8 +1,8 @@
 <?php
 
-namespace Bsadnu\Exception;
+namespace Bsadnu\Exception\Base;
 
-use TypeError as StandardTypeError;
+use Bsadnu\Exception\Interfaces\BaseInterface;
 
 /**
  * Class TypeError. There are three scenarios where a TypeError may be thrown.
@@ -14,7 +14,6 @@ use TypeError as StandardTypeError;
  *
  * @package Bsadnu\Exception
  */
-class TypeError extends StandardTypeError implements ExceptionInterface
+class TypeError extends \TypeError implements BaseInterface
 {
-    use UnitExceptionTrait;
 }

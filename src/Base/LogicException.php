@@ -1,8 +1,8 @@
 <?php
 
-namespace Bsadnu\Exception;
+namespace Bsadnu\Exception\Base;
 
-use LogicException as StandardLogicException;
+use Bsadnu\Exception\Interfaces\BaseInterface;
 
 /**
  * Class LogicException.
@@ -11,7 +11,6 @@ use LogicException as StandardLogicException;
  *
  * @package Bsadnu\Exception
  */
-class LogicException extends StandardLogicException implements ExceptionInterface
+class LogicException extends \LogicException implements BaseInterface
 {
-    use UnitExceptionTrait;
 }

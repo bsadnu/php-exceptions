@@ -1,8 +1,8 @@
 <?php
 
-namespace Bsadnu\Exception;
+namespace Bsadnu\Exception\Base;
 
-use OutOfBoundsException as StandardOutOfBoundsException;
+use Bsadnu\Exception\Interfaces\BaseInterface;
 
 /**
  * Class OutOfBoundsException.
@@ -11,7 +11,6 @@ use OutOfBoundsException as StandardOutOfBoundsException;
  *
  * @package Bsadnu\Exception
  */
-class OutOfBoundsException extends StandardOutOfBoundsException implements ExceptionInterface
+class OutOfBoundsException extends \OutOfBoundsException implements BaseInterface
 {
-    use UnitExceptionTrait;
 }

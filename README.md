@@ -19,7 +19,7 @@ composer require bsadnu/php-exceptions
 - You may use exceptions within the standard throwing/catching mechanism or even extend them in any way you want:
 
 ```php
-use Bsadnu\Exception\InvalidArgumentException;
+use Bsadnu\Exception\Base\InvalidArgumentException;
 
 ...
 
@@ -31,26 +31,24 @@ try {
 ```
 
 ```php
-use Bsadnu\Exception\TypeError;
+use Bsadnu\Exception\Base\TypeError;
 
 ...
 
 throw new TypeError($message);
 ```
 
-- It is really helpful to catch the base `ExceptionInterface` sometimes. Therefore, you can control a group of exceptions. Moreover, you may add manually as many specific interfaces as you wish. 
+- It is really helpful to catch either the base `BaseInterface` or any other. Therefore, you can control a group of exceptions. Moreover, you may add manually as many specific interfaces as you wish. 
 
 ## More detailed description
 
-All exceptions used in this library implements `\Bsadnu\Exception\ExceptionInterface`, and extend one of the SPL extensions. This way, you have several ways of catching specific extension groups:
+All exceptions used in this library implements `\Bsadnu\Exception\Interfaces\BaseInterface`, and extend one of the SPL extensions. This way, you have several ways of catching specific extension groups:
 1. Catch all exceptions: `\Exception`
 2. Catch all exceptions thrown by the library:
-`\Bsadnu\Exception\ExceptionInterface`
+`\Bsadnu\Exception\Interfaces\BaseInterface`
 3. Catch a specific SPL exception: `\LogicException`
-4. Catch a specific SPL exception thrown by the library:
-`\Bsadnu\Exception\LogicException`
-
-The base `\Bsadnu\Exception\ExceptionInterface` consists of `getUnit/setUnit` methods which can be used to describe the place of code (Unit) where an exception occurs.
+4. Catch a specific exception thrown by the library:
+`\Bsadnu\Exception\Base\LogicException`
 
 ## Contributing
 

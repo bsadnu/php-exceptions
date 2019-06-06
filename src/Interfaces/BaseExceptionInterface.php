@@ -3,10 +3,10 @@
 namespace Bsadnu\Exception\Interfaces;
 
 /**
- * Interface BaseInterface. The base exception interface.
+ * Base exception interface.
  *
  * @package Bsadnu\Exception
  */
-interface BaseInterface
+interface BaseExceptionInterface
 {
 }

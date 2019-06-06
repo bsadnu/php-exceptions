@@ -2,15 +2,14 @@
 
 namespace Bsadnu\Exception\Base;
 
-use Bsadnu\Exception\Interfaces\BaseInterface;
+use Bsadnu\Exception\Interfaces\BaseExceptionInterface;
 
 /**
- * Class OutOfBoundsException.
  * This exception is thrown if a value is not a valid key.
  * This represents errors that cannot be detected at compile time.
  *
  * @package Bsadnu\Exception
  */
-class OutOfBoundsException extends \OutOfBoundsException implements BaseInterface
+class OutOfBoundsException extends \OutOfBoundsException implements BaseExceptionInterface
 {
 }

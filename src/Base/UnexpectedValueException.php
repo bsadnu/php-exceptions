@@ -2,10 +2,9 @@
 
 namespace Bsadnu\Exception\Base;
 
-use Bsadnu\Exception\Interfaces\BaseInterface;
+use Bsadnu\Exception\Interfaces\BaseExceptionInterface;
 
 /**
- * Class UnexpectedValueException.
  * This exception is thrown if a value does not match with a set of values.
  * Typically this happens when a function calls another function and expects
  * the return value to be of a certain type or value not including arithmetic
@@ -13,6 +12,6 @@ use Bsadnu\Exception\Interfaces\BaseInterface;
  *
  * @package Bsadnu\Exception
  */
-class UnexpectedValueException extends \UnexpectedValueException implements BaseInterface
+class UnexpectedValueException extends \UnexpectedValueException implements BaseExceptionInterface
 {
 }

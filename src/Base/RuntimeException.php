@@ -2,13 +2,13 @@
 
 namespace Bsadnu\Exception\Base;
 
-use Bsadnu\Exception\Interfaces\BaseInterface;
+use Bsadnu\Exception\Interfaces\BaseExceptionInterface;
 
 /**
- * Class RuntimeException. This exception is thrown if an error which can only be found on runtime occurs.
+ * This exception is thrown if an error which can only be found on runtime occurs.
  *
  * @package Bsadnu\Exception
  */
-class RuntimeException extends \RuntimeException implements BaseInterface
+class RuntimeException extends \RuntimeException implements BaseExceptionInterface
 {
 }

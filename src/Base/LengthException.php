@@ -2,13 +2,13 @@
 
 namespace Bsadnu\Exception\Base;
 
-use Bsadnu\Exception\Interfaces\BaseInterface;
+use Bsadnu\Exception\Interfaces\BaseExceptionInterface;
 
 /**
- * Class LengthException. This exception is thrown if a length is invalid.
+ * This exception is thrown if a length is invalid.
  *
  * @package Bsadnu\Exception
  */
-class LengthException extends \LengthException implements BaseInterface
+class LengthException extends \LengthException implements BaseExceptionInterface
 {
 }

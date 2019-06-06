@@ -2,10 +2,10 @@
 
 namespace Bsadnu\Exception\Base;
 
-use Bsadnu\Exception\Interfaces\BaseInterface;
+use Bsadnu\Exception\Interfaces\BaseExceptionInterface;
 
 /**
- * Class TypeError. There are three scenarios where a TypeError may be thrown.
+ * There are three scenarios where a TypeError may be thrown.
  * The first is where the argument type being passed to a function does not
  * match its corresponding declared parameter type.
  * The second is where a value being returned from a function does not
@@ -14,6 +14,6 @@ use Bsadnu\Exception\Interfaces\BaseInterface;
  *
  * @package Bsadnu\Exception
  */
-class TypeError extends \TypeError implements BaseInterface
+class TypeError extends \TypeError implements BaseExceptionInterface
 {
 }
